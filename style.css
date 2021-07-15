@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  font-size: 15px;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.2rem,;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+
+
+.container {
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  background: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  width: 1040px;
+  height: 447px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.first-item {
+  flex-basis: 500px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  margin-top: 30px;
+}
+
+.card-text{
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+
+.stats-text {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+
+}
+
+
+.stats {
+  display: flex;
+
+}
+
+.col {
+  margin-top: 80px;
+  padding: 0 0 0 50px;
+
+
+}
+
+.title {
+  margin-top: 60px;
+  padding: 0 100px 0 50px;
+}
+
+.purple {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-text {
+  margin-top: 30px;
+  padding: 0 92px 0 50px;
+}
+
+.second-item{
+  position: relative;
+
+}
+
+.color {
+  background-color: hsl(277, 64%, 61%);
+  height: 445px;
+  width: 540px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.img-fluid {
+  filter: contrast(1.5);
+}
+
+@media only screen and (max-device-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .title {
+    margin-top: 10px;
+padding: 0px 10px;
+  }
+
+  .card-text {
+    margin-top: 30px;
+padding: 0px 15px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .col {
+    padding: 0;
+    margin: 30px 0;
+  }
+
+  .stats-text {
+    font-size: 1rem;
+  }
+
+  .container {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .first-item{
+    order: 2;
+    flex-basis: auto;
+    text-align: center;
+  }
+
+  .card {
+    margin: 30px;
+    height: auto;
+    width: auto;
+  }
+
+  .img-fluid {
+    width: 320px;
+  }
+
+  .color {
+    width: 320px;
+    height: 265px;
+  }
+
+
+}
